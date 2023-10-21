@@ -1,0 +1,107 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ENUMS ======================================================================
+
+enum BookStatus {
+  PUBLISH
+  MEAP
+}
+
+// MODELOS ====================================================================
+model User {
+  id            Int             @id @default(autoincrement())
+  username      String          @unique
+  email         String          @unique
+  password      String
+  name          String?
+  lastname      String?
+  instagram     String?
+  linkedin      String?
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime?
+  categories    UserCategory[]
+  books         UserBook[]
+}
+
+model Category {
+  id            Int             @id @default(autoincrement())
+  name          String          @unique
+  users         UserCategory[]
+  books         BookCategory[]
+}
+
+model Book {
+  id                Int             @id @default(autoincrement())
+  title             String
+  status            BookStatus
+  publishDate       DateTime
+  shortDescription  String?
+  longDescription   String?
+  thumbnailUrl      String?
+  pages             Int?
+  createdAt         DateTime        @default(now())
+  updatedAt         DateTime?
+  categories        BookCategory[]
+  authors           AuthorBook[]
+  users             UserBook[]
+}
+
+model Author {
+  id            Int           @id @default(autoincrement())
+  name          String
+  lastName      String
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime?
+  books         AuthorBook[]
+}
+
+model UserCategory {
+  user          User @relation(fields: [userId], references: [id])
+  userId        Int
+  category      Category @relation(fields: [categoryId], references: [id])
+  categoryId    Int
+
+  @@id([userId, categoryId])
+}
+
+model BookCategory {
+  book          Book @relation(fields: [bookId], references: [id])
+  bookId        Int
+  category      Category @relation(fields: [categoryId], references: [id])
+  categoryId    Int
+
+  @@id([bookId, categoryId])
+}
+
+model AuthorBook {
+  book        Book    @relation(fields: [bookId], references: [id])
+  bookId      Int
+  author      Author  @relation(fields: [authorId], references: [id])
+  authorId    Int
+  popular     Boolean @default(false)
+
+  @@id([bookId, authorId])
+}
+
+model UserBook {
+  user          User    @relation(fields: [userId], references: [id])
+  userId        Int
+  book          Book    @relation(fields: [bookId], references: [id])
+  bookId        Int
+  recommended   Boolean @default(false)
+  qualification Int?
+  read          Boolean @default(false)
+  toRead        Boolean @default(false)
+
+  @@id([userId, bookId])
+}
