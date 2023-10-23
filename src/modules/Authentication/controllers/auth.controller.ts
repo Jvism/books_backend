@@ -37,7 +37,7 @@ export const loginUserController = async (req: Request, res: Response, next: Nex
         exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24 * 7
       })
       res.setHeader('Set-Cookie', serializedCookie({ name: 'authToken', value: token }))
-      res.json('login succesfully')
+      res.json('Login succesfully')
     } else {
       res.status(401).json({
         message: 'Invalid email or password'
