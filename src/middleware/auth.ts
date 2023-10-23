@@ -3,7 +3,11 @@ import { verifyToken } from '@/helpers/jwt.handle'
 import { type tokenData } from '@/@types/types.d'
 
 const authHandler = (req: Request, res: Response, next: NextFunction): void => {
-  const { authToken } = req.cookies || {}
+  let { authToken } = req.cookies || {}
+  
+  if (!authToken) {
+    authToken = req.headers['authorization']?.split('Bearer ')[1]
+  }
 
   if (!authToken) {
     res.status(401).json({
