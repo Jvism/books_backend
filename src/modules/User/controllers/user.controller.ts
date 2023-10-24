@@ -1,12 +1,11 @@
 import type { NextFunction, Request, Response } from 'express'
 import bcrypt from 'bcrypt'
-import { createUser, getAllUsers, findUserById, updateUser, deleteUser } from '../services/user.service'
-import type { IUserCreate, IUserSimpleResponse, IUserUpdateInfo } from '@/@types/types.d'
-import type { User } from '@prisma/client'
+import { createUser, getAllUsers, findUserById, updateUser, deleteUser, findUserByUsername } from '../services/user.service'
+import type { IUserCreate, IUserSimpleResponse, IUserUpdateInfo, IUserResponse } from '@/@types/types.d'
 
 export const getUsersController = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
-    const usersFound: User[] | null = await getAllUsers()
+    const usersFound: IUserResponse[] | null = await getAllUsers()
     if (!usersFound) {
       res.status(404).json({ message: 'Users not found' })
     } else {
@@ -25,7 +24,7 @@ export const getUserController = async (req: Request, res: Response, next: NextF
       res.status(400).json({ message: 'Missing id' })
     }
 
-    const userFound: User | null = await findUserById(Number(id))
+    const userFound: IUserResponse | null = await findUserByUsername(id)
     if (!userFound) {
       res.status(404).json({ message: 'User not found' })
     } else {
@@ -44,7 +43,7 @@ export const createUserController = async (req: Request, res: Response, next: Ne
     }
 
     userData.password = await bcrypt.hash(userData.password, 10)
-    const userCreated: User | null = await createUser(userData)
+    const userCreated: IUserResponse | null = await createUser(userData)
 
     if (!userCreated) {
       res.status(400).json({ message: 'User not created' })
@@ -76,7 +75,7 @@ export const updateUserController = async (req: Request, res: Response, next: Ne
       res.status(400).json({ message: 'Missing data' })
     }
 
-    const userUpdated: User | null = await updateUser(Number(id), userData)
+    const userUpdated: IUserResponse | null = await updateUser(Number(id), userData)
     if (!userUpdated) {
       res.status(400).json({ message: 'User not updated' })
     } else {
@@ -94,7 +93,7 @@ export const deleteUserController = async (req: Request, res: Response, next: Ne
       res.status(400).json({ message: 'Missing id' })
     }
 
-    const userDeleted: User | null = await deleteUser(Number(id))
+    const userDeleted: IUserResponse | null = await deleteUser(Number(id))
     if (!userDeleted) {
       res.status(400).json({ message: 'User not deleted' })
     } else {
