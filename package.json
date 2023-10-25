@@ -12,17 +12,18 @@
     "url": "git+https://github.com/Jvism/books_backend.git"
   },
   "keywords": [
-    "tvsk",
+    "books",
     "backend"
   ],
-  "author": "js",
+  "author": "ji",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Jvism/books_backend/issues"
   },
   "homepage": "https://github.com/Jvism/books_backend#readme",
   "prisma": {
-    "schema": "src/db/schema.prisma"
+    "schema": "src/db/schema.prisma",
+    "seed": "ts-node ./src/db/seed/seed.ts"
   },
   "dependencies": {
     "@prisma/client": "^5.1.1",
