@@ -46,7 +46,7 @@ export interface IBookResponse {
   id: number
   title: string
   status: BookStatus
-  publishDate: Date
+  publishDate: Date | null
   shortDescription: string | null
   longDescription: string | null
   thumbnailUrl: string | null
@@ -60,7 +60,7 @@ export interface IBookResponse {
 export interface IAuthorResponse {
   id: number
   name: string
-  lastName: string
+  lastName: string | null
   createdAt: Date
   updatedAt: Date | null
 }
