@@ -44,7 +44,7 @@ model Book {
   id                Int             @id @default(autoincrement())
   title             String
   status            BookStatus
-  publishDate       DateTime
+  publishDate       DateTime?
   shortDescription  String?
   longDescription   String?
   thumbnailUrl      String?
@@ -59,7 +59,7 @@ model Book {
 model Author {
   id            Int           @id @default(autoincrement())
   name          String
-  lastName      String
+  lastName      String?
   createdAt     DateTime      @default(now())
   updatedAt     DateTime?
   books         AuthorBook[]
