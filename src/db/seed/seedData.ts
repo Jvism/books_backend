@@ -22,7 +22,7 @@ export const seedData: ISeedData = {
     "charlie collins",
     "robi sen",
     "gojko adzic",
-    "tariq ahmed with jon hirschi",
+    "jon hirschi",
     "faisal abid",
     "tariq ahmed",
     "dan orlando",
@@ -81,7 +81,8 @@ export const seedData: ISeedData = {
     "naomi r. ceder",
     "tom cervenka",
     "robert chapman",
-    "william r. cockayne and michael zyda",
+    "william r. cockayne",
+    "michael zyda",
     "editors",
     "arnaud cogoluegnes",
     "thierry templier",
@@ -93,12 +94,15 @@ export const seedData: ISeedData = {
     "robert cooper",
     "charles collins",
     "dave crane",
-    "eric pascarello with darren james",
-    "jord sonneveld and bear bibeault with ted goddard",
+    "eric pascarello",
+    "darren james",
+    "jord sonneveld",
+    "ted goddard",
     "chris gray",
     "ram venkataraman",
     "joe walker",
-    "bear bibeault with tom locke",
+    "bear bibeault",
+    "tom locke",
     "chris richardson",
     "david cross",
     "rob crowther",
@@ -188,10 +192,12 @@ export const seedData: ISeedData = {
     "marcin kawalerowicz",
     "craig berntson",
     "erik keller",
-    "kermit project at columbia university",
+    "kermit project",
     "norman klein",
-    "max carlson with glenn macewen",
-    "dierk koenig with andrew glover",
+    "max carlson",
+    "glenn macewen",
+    "dierk koenig",
+    "andrew glover",
     "paul king",
     "guillaume laforge",
     "jon skeet",
@@ -219,13 +225,12 @@ export const seedData: ISeedData = {
     "haleh mahbod",
     "simon nash",
     "compiled",
-    "introduced by ted lewis",
     "ted lewis",
     "friends",
     "howard m. lewis ship",
     "patrick lightbody",
     "jason carreira",
-    "brendan g. lim with jerry cheung",
+    "jerry cheung",
     "jeremy mcanally",
     "martin logan",
     "eric merritt",
@@ -244,7 +249,7 @@ export const seedData: ISeedData = {
     "kyle lussier",
     "daniel c. lynch",
     "james p. gray",
-    "and edward rabinovitch",
+    "edward rabinovitch",
     "jeffrey machols",
     "tim maher",
     "qusay h. mahmoud",
@@ -256,7 +261,7 @@ export const seedData: ISeedData = {
     "richard scott mark",
     "haralambos marmanis",
     "dmitry babenko",
-    "vincent massol with ted husted",
+    "ted husted",
     "chris a. mattmann",
     "jukka l. zitting",
     "assaf arkin",
@@ -273,14 +278,11 @@ export const seedData: ISeedData = {
     "chris eppstein",
     "brandon mathis",
     "ted neward",
-    "contributions from 53 sql server mvps",
-    "edited by paul nielsen",
     "kalen delaney",
     "greg low",
     "adam machanic",
     "paul s. randal",
     "kimberly l. tripp",
-    "contributions from 53 sql server mvps; edited by paul nielsen",
     "paul nielsen",
     "regina o. obe",
     "leo s. hsu",
@@ -313,20 +315,21 @@ export const seedData: ISeedData = {
     "michael sync",
     "timothy perrett",
     "theo petersen",
-    "tomas petricek with jon skeet",
     "peter harrington",
     "dhanji r. prasanna",
-    "eric pulier and hugh taylor",
-    "foreword by paul gaffney",
+    "eric pulier",
+    "hugh taylor",
+    "paul gaffney",
     "tijs rademakers",
-    "oren eini writing as ayende rahien",
-    "j. b. rainsberger with contributions by scott stirling",
+    "oren eini",
+    "scott stirling",
     "noel rappin",
     "robin dunn",
     "amit rathore",
     "nilanjan raychaudhuri",
     "trygve reenskaug",
-    "dagfinn reiersøl with marcus baker",
+    "dagfinn reiersøl",
+    "marcus baker",
     "chris shiflett",
     "john resig",
     "ronny richardson",
@@ -348,7 +351,6 @@ export const seedData: ISeedData = {
     "mark seemann",
     "daniel selman",
     "richard sezov",
-    "jr",
     "gal shachor",
     "adam chace",
     "magnus rydin",
@@ -388,15 +390,15 @@ export const seedData: ISeedData = {
     "olivier bazoud",
     "gregory m. travis",
     "bret updegraff",
-    "jd \"illiad\" frazer",
+    "jdilliad frazer",
     "martien verbruggen",
     "alvaro videla",
     "jason j.w. williams",
     "craig walls",
     "norman richards",
     "ryan breidenbach",
-    "craig walls with ryan breidenbach",
-    "willie wheeler with joshua white",
+    "willie wheeler",
+    "joshua white",
     "james p. white",
     "david a. hemphill",
     "phil wicklund",
@@ -447,7 +449,6 @@ export const seedData: ISeedData = {
     "amandeep khurana",
     "jonathan campos",
     "jim jackson",
-    "ii",
     "ian gilman",
     "carlos m. sessa",
     "jeffery hicks",
@@ -456,7 +457,7 @@ export const seedData: ISeedData = {
     "david wood",
     "marsha zaidman",
     "luke ruth",
-    "with michael hausenblas",
+    "michael hausenblas",
     "victor romero",
     "michael s. mikowski",
     "josh c. powell",
@@ -507,7 +508,6 @@ export const seedData: ISeedData = {
     "dean alan hume",
     "joshua suereth",
     "matthew farwell",
-    "edited by jeffery hicks",
     "oisin grehan",
     "aleksandar nikolic",
     "benjamin muschko",
@@ -566,7 +566,7 @@ export const seedData: ISeedData = {
     "matthew jankowski",
     "henrik brink",
     "joseph richards",
-    "theodore j. (t.j.) vantoll iii",
+    "theodore j.",
     "nicolas g. bevacqua",
     "mike mcquaid",
     "richard l. saltzer",
@@ -574,7 +574,7 @@ export const seedData: ISeedData = {
     "raoul-gabriel urma",
     "mario fusco",
     "alan mycroft",
-    "saša juric´",
+    "saša juric",
     "peter bakkum",
     "tim hawkins",
     "shaun verch",
@@ -594,7 +594,6 @@ export const seedData: ISeedData = {
     "evan m. hahn",
     "rick umali",
     "emmit a. scott",
-    "jr."
   ],
   "books": [
     {
@@ -655,7 +654,8 @@ export const seedData: ISeedData = {
       "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ahmed.jpg",
       "pages": 576,
       "authors": [
-        "tariq ahmed with jon hirschi",
+        "tariq ahmed",
+        "jon hirschi",
         "faisal abid"
       ],
       "categories": [
@@ -739,7 +739,6 @@ export const seedData: ISeedData = {
       "authors": [
         "andres almiray",
         "danno ferrin",
-        "",
         "james shingler"
       ],
       "categories": [
@@ -1132,7 +1131,6 @@ export const seedData: ISeedData = {
       "authors": [
         "daniele bochicchio",
         "stefano mostarda",
-        "",
         "marco de sanctis"
       ],
       "categories": [
@@ -1196,7 +1194,6 @@ export const seedData: ISeedData = {
       "authors": [
         "margaret m. burnett",
         "adele goldberg",
-        "",
         "ted g. lewis"
       ],
       "categories": [
@@ -1304,7 +1301,8 @@ export const seedData: ISeedData = {
       "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/cockayne.jpg",
       "pages": 320,
       "authors": [
-        "william r. cockayne and michael zyda",
+        "william r. cockayne",
+        "michael zyda",
         "editors"
       ],
       "categories": [
@@ -1404,7 +1402,8 @@ export const seedData: ISeedData = {
       "pages": 680,
       "authors": [
         "dave crane",
-        "eric pascarello with darren james"
+        "eric pascarello",
+        "darren james"
       ],
       "categories": [
         "xml",
@@ -1421,7 +1420,9 @@ export const seedData: ISeedData = {
       "pages": 536,
       "authors": [
         "dave crane",
-        "jord sonneveld and bear bibeault with ted goddard",
+        "jord sonneveld",
+        "bear bibeault", 
+        "ted goddard",
         "chris gray",
         "ram venkataraman",
         "joe walker"
@@ -1440,7 +1441,8 @@ export const seedData: ISeedData = {
       "pages": 544,
       "authors": [
         "dave crane",
-        "bear bibeault with tom locke"
+        "bear bibeault",
+        "tom locke"
       ],
       "categories": [
         "web development"
@@ -2489,7 +2491,7 @@ export const seedData: ISeedData = {
       "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/kermit.jpg",
       "pages": 0,
       "authors": [
-        "kermit project at columbia university"
+        "kermit project"
       ],
       "categories": [
         "internet",
@@ -3031,7 +3033,7 @@ export const seedData: ISeedData = {
       "authors": [
         "daniel c. lynch",
         "james p. gray",
-        "and edward rabinovitch",
+        "edward rabinovitch",
         "editors"
       ],
       "categories": [
@@ -3901,7 +3903,7 @@ export const seedData: ISeedData = {
       "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/rahien.jpg",
       "pages": 352,
       "authors": [
-        "oren eini writing as ayende rahien"
+        "oren eini"
       ],
       "categories": [
         "microsoft .net"
@@ -3916,7 +3918,7 @@ export const seedData: ISeedData = {
       "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/rainsberger.jpg",
       "pages": 752,
       "authors": [
-        "j. b. rainsberger with contributions by scott stirling"
+        "scott stirling"
       ],
       "categories": [
         "java"
@@ -5391,7 +5393,7 @@ export const seedData: ISeedData = {
         "david wood",
         "marsha zaidman",
         "luke ruth",
-        "with michael hausenblas"
+        "michael hausenblas"
       ],
       "categories": []
     },
@@ -6437,7 +6439,7 @@ export const seedData: ISeedData = {
       "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/vantoll.jpg",
       "pages": 0,
       "authors": [
-        "theodore j. (t.j.) vantoll iii"
+        "theodore j."
       ],
       "categories": []
     },
@@ -6519,7 +6521,7 @@ export const seedData: ISeedData = {
       "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/juric.jpg",
       "pages": 0,
       "authors": [
-        "saša juric´"
+        "saša juric"
       ],
       "categories": []
     },
@@ -6688,7 +6690,6 @@ export const seedData: ISeedData = {
       "authors": [
         "don jones",
         "jeffery hicks",
-        "",
         "richard siddaway"
       ],
       "categories": []
@@ -6755,7 +6756,6 @@ export const seedData: ISeedData = {
       "pages": 0,
       "authors": [
         "emmit a. scott",
-        "jr."
       ],
       "categories": []
     },
