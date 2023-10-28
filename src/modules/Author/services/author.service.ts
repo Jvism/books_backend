@@ -5,6 +5,21 @@ export const findAuthorById = async (id: number): Promise<IAuthorResponse | null
   const authorFound = await prisma.author.findUnique({
     where: {
       id
+    },
+    include: {
+      books: {
+        include: {
+          book: {
+            include: {
+              categories: {
+                include: {
+                  category: true
+                }
+              }
+            }
+          }
+        }
+      }
     }
   })
 
